@@ -6,43 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de IMC</title>
     <link rel="stylesheet" href='style.css'>
+    <link rel="icon" type="imagem/png" href="./icon/icone.png" />
 </head>
 
-<body>
+<body id="fundo">
     <div class='IMC'>
         <h1 class='Teste-de-IMC'>TESTE DE IMC</h1>
-        <p1 id='altura-name'>Peso</p1>
-        <p2 id='peso-name'>Altura</p2></br>
-        <input type="number" name="Peso" id="peso" placeholder="Peso em Kg"/>
-        <input type="number" name="Altura" id="altura" placeholder="Altura em metros" /></br>
+        
+        <div id='textosPA'>
+            <p1 id='altura-name'>Peso</p1>
+            <p2 id='peso-name'>Altura</p2>
+        </div>
+        <div id='inputs'>
+            <input type="number" name="Peso" id="peso" placeholder="Peso em Kg"/>
+            <input type="number" name="Altura" id="altura" placeholder="Altura em metros" />
+        </div>
         <button class="button botao1" onclick="clicar();cor()">Calcular</button>
-        <br />
         <div class='resultado'>Resultado</div>
     </div>
-    <div class='Legenda'>
-        <p class='legenda'>Legenda:</p>
-        <p class='categorias'>
-            Magreza grau III</br>
-            Magreza grau II</br>
-            Abaixo do peso</br>
-            Eutrofia</br>
-            Sobrepeso</br>
-            Obesidade grau I</br>
-            Obesidade grau II</br>
-            Obesidade grau III</p>
-    </div>
-    <div class='mg3'></div>
-    <div class='mg2'></div>
-    <div class='ab1'></div>
-    <div class='eu'></div>
-    <div class='sp1'></div>
-    <div class='ob1'></div>
-    <div class='ob2'></div>
-    <div class='ob3'></div>
+    <div id='Legenda'>
+        <p id='legenda'>Legenda:</p>
+        <div id='categorias'>
+            <div id='categorias1'>
+                <div id='mag3'><a id='magr3'></a><p>Magreza grau III</p></div>
 
-    <p class='creditos'>Criado por: Maycom Willams</p>
+                <div id='mag2'><a id='magr2'></a><p>Magreza grau II</p></div>
+            
+                <div id='mag1'><a id='magr1'></a><p>Magreza grau I</p></div>
+            
+                <div id='eutrofia1'><a id='eut1'></a><p>Eutrofia</p></div>
+            </div>
+            <div id='categorias2'>
+                <div id='sp'><a id='sobre'></a><p>Sobrepeso</p></div>
+
+                <div id='ob1'><a id='obesi1'></a><p>Obesidade grau I</p></div>
+            
+                <div id='ob2'><a id='obesi2'></a><p>Obesidade grau II</p></div>
+            
+                <div id='ob3'><a id='obesi3'></a><p>Obesidade grau III</p></div>
+            </div>
+            </div>
+    </div>
+
+    <p id='creditos'>Criado por: Maycom Willams</p>
 
     <script src="java.js"></script>
 </body>
+    
 
 </html>
